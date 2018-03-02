@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>投资者测试</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-f7">
+	<h3 class="title2">投资风险测评</h3>
+	<p class="note2">根据相关法规要求，请先完成风险测评了解自身的风险承受能力，以便您更好地做出理性的投资决策。</p>
+	<div class="progress-wrap">
+		<p class="progress-txt">1/15</p>
+		<div class="progress-line">
+			<i class="cur" style="width: 6.7%"></i>
+		</div>
+	</div>
+	<div class="test-wrap">
+		<p class="test-question">1.您的收入主要来自于？</p>
+		<ul class="test-answer-list">
+			<li><label><input type="checkbox"><i></i>A.工资、劳务报酬</label></li>
+			<li><label><input type="checkbox"><i></i>B.个体或企业生产经营所得</label></li>
+			<li><label><input type="checkbox"><i></i>C.利息、股息、转让等金融性资产收入</label></li>
+			<li><label><input type="checkbox"><i></i>D.出租、出售房地产等非金融性资产收入</label></li>
+			<li><label><input type="checkbox"><i></i>E.无固定收入</label></li>
+		</ul>
+		<a href="#" class="btn">上一题</a>
+	</div>
+	<!--亏损提示弹窗-->
+	<div class="overlay">
+		<div class="popbox2" style="display: none">
+			<h3>亏损提示</h3>
+			<p class="txt1">您累计亏损已超过5000元。</p>
+			<p class="txt2">请再次确认您具备相应的风险识别和风险承担能力，并已详细理解和审慎评估了该产品的风险和收益实现条件等基本情况。</p>
+			<label class="checkbox"><input type="checkbox"><i></i>我同意<a href="#">小期旺产品风险协议</a></label>
+			<a href="#" class="btn1">放弃</a>
+			<a href="#" class="btn2">我可以承受目前亏损，继续购买(5s)</a>
+			<a href="#" class="close"></a>
+		</div>
+		<div class="popbox3">
+			<p class="txt1">按照证监会和国家监管机构要求，您需要通过投资者适当性评估，才可购买小期旺。</p>
+			<a href="#" class="btn1">现在去测评</a>
+			<a href="#" class="btn2">稍后再试</a>
+			<a href="#" class="close"></a>
+		</div>
+	</div>
+</body>
+
+</html>

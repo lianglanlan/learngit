@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>资金记录</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo-wrap">
+        <a href="#" class="search-back"></a>
+        资金记录
+    </div>
+</div>
+<ul class="tab">
+    <li>全部类型</li>
+    <li>三天以内</li>
+</ul>
+<div class="tab-option-wrap" style="display: none">
+    <ul class="tab-option-list" style="display: none">
+        <li class="cur">全部类型</li>
+        <li>即时到账充值</li>
+        <li>投标成功</li>
+        <li>资金取现</li>
+        <li>收到还款</li>
+    </ul>
+    <ul class="tab-option-list" style="display: none">
+        <li class="cur">三天以内</li>
+        <li>一个月以内</li>
+        <li>三个月以内</li>
+        <li>六个月以内</li>
+    </ul>
+</div>
+<p class="record-total">账户余额：￥373459.79元， 累计交易收入：￥123319.54元， 累计盈利：￥114850.46元</p>
+
+<ul class="list-record">
+    {@each i in range(0,10)}
+    <li>
+        <div class="lr-detail">
+            <p>提现</p>
+            <p>2017-12-19 11:20:23</p>
+        </div>
+        <span class="lr-num">-202.20</span>
+    </li>
+    {@/each}
+</ul>
+<script>
+    var tabBtns = document.querySelectorAll('.tab li');
+    var optionWrap = document.querySelector('.tab-option-wrap');
+    var options = optionWrap.querySelectorAll('ul');
+
+    Array.prototype.forEach.call(tabBtns,function(tab,index){
+        tab.addEventListener('click',function(){
+            var tabCur = document.querySelector('.tab .cur');
+            if(tabCur == this){ //当前tab有cur类名
+                this.classList.remove('cur');
+                optionWrap.style.display = 'none';
+            }else{
+                if(tabCur) tabCur.classList.remove('cur');
+                this.classList.add('cur');
+                optionWrap.style.display = 'block';
+                Array.prototype.forEach.call(options,function(option,optionIndex){
+                    if(optionIndex !== index) {
+                        option.style.display = 'none';
+                    }else{
+                        option.style.display = 'block';
+                    }
+                })
+            }
+        })
+    })
+    optionWrap.addEventListener('click',function(e){
+        if(e.target == this){
+            this.style.display = 'none';
+            var tabCur = document.querySelector('.tab .cur');
+            tabCur.classList.remove('cur');
+        }else if(e.target.tagName == 'LI'){
+            var optionCur = optionWrap.querySelector('.cur');
+            optionCur.classList.remove('cur');
+            e.target.classList.add('cur');
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+$__sprite-is-rem__: false;
+$__sprite-only-retina__: false;
+$__sprite-local-group__: (
+	"icon": (
+		"arrow": (
+			"name": "arrow",
+			"width": 8,
+			"height": 12,
+			"total_width": 211,
+			"total_height": 126,
+			"x": -19,
+			"y": -108,
+			"x_pct": "9.36%",
+			"y_pct": "94.737%",
+			"url": "/img/sprite/sprite_icon.png",
+			"sprite_name": "sprite_icon.png"
+		),
+		"back01": (
+			"name": "back01",
+			"width": 11,
+			"height": 18,
+			"total_width": 211,
+			"total_height": 126,
+			"x": 0,
+			"y": -108,
+			"x_pct": 0,
+			"y_pct": "100%",
+			"url": "/img/sprite/sprite_icon.png",
+			"sprite_name": "sprite_icon.png"
+		),
+		"bg1": (
+			"name": "bg1",
+			"width": 140,
+			"height": 72,
+			"total_width": 211,
+			"total_height": 126,
+			"x": 0,
+			"y": 0,
+			"x_pct": 0,
+			"y_pct": 0,
+			"url": "/img/sprite/sprite_icon.png",
+			"sprite_name": "sprite_icon.png"
+		),
+		"close": (
+			"name": "close",
+			"width": 15,
+			"height": 15,
+			"total_width": 211,
+			"total_height": 126,
+			"x": -28,
+			"y": -80,
+			"x_pct": "14.286%",
+			"y_pct": "72.072%",
+			"url": "/img/sprite/sprite_icon.png",
+			"sprite_name": "sprite_icon.png"
+		),
+		"coin": (
+			"name": "coin",
+			"width": 20,
+			"height": 20,
+			"total_width": 211,
+			"total_height": 126,
+			"x": 0,
+			"y": -80,
+			"x_pct": 0,
+			"y_pct": "75.472%",
+			"url": "/img/sprite/sprite_icon.png",
+			"sprite_name": "sprite_icon.png"
+		),
+		"tick": (
+			"name": "tick",
+			"width": 13,
+			"height": 10,
+			"total_width": 211,
+			"total_height": 126,
+			"x": -51,
+			"y": -80,
+			"x_pct": "25.758%",
+			"y_pct": "68.966%",
+			"url": "/img/sprite/sprite_icon.png",
+			"sprite_name": "sprite_icon.png"
+		),
+		"waiting": (
+			"name": "waiting",
+			"width": 63,
+			"height": 63,
+			"total_width": 211,
+			"total_height": 126,
+			"x": -148,
+			"y": 0,
+			"x_pct": "100%",
+			"y_pct": 0,
+			"url": "/img/sprite/sprite_icon.png",
+			"sprite_name": "sprite_icon.png"
+		)
+	)
+);
+$__sprite-local-group-2x__: (
+	"icon": (
+		"arrow": (
+			"name": "arrow",
+			"width": 16,
+			"height": 24,
+			"total_width": 422,
+			"total_height": 252,
+			"x": -38,
+			"y": -216,
+			"x_pct": "9.36%",
+			"y_pct": "94.737%",
+			"url": "/img/sprite/sprite_icon@2x.png",
+			"sprite_name": "sprite_icon@2x.png"
+		),
+		"back01": (
+			"name": "back01",
+			"width": 22,
+			"height": 36,
+			"total_width": 422,
+			"total_height": 252,
+			"x": 0,
+			"y": -216,
+			"x_pct": 0,
+			"y_pct": "100%",
+			"url": "/img/sprite/sprite_icon@2x.png",
+			"sprite_name": "sprite_icon@2x.png"
+		),
+		"bg1": (
+			"name": "bg1",
+			"width": 280,
+			"height": 144,
+			"total_width": 422,
+			"total_height": 252,
+			"x": 0,
+			"y": 0,
+			"x_pct": 0,
+			"y_pct": 0,
+			"url": "/img/sprite/sprite_icon@2x.png",
+			"sprite_name": "sprite_icon@2x.png"
+		),
+		"close": (
+			"name": "close",
+			"width": 30,
+			"height": 30,
+			"total_width": 422,
+			"total_height": 252,
+			"x": -56,
+			"y": -160,
+			"x_pct": "14.286%",
+			"y_pct": "72.072%",
+			"url": "/img/sprite/sprite_icon@2x.png",
+			"sprite_name": "sprite_icon@2x.png"
+		),
+		"coin": (
+			"name": "coin",
+			"width": 40,
+			"height": 40,
+			"total_width": 422,
+			"total_height": 252,
+			"x": 0,
+			"y": -160,
+			"x_pct": 0,
+			"y_pct": "75.472%",
+			"url": "/img/sprite/sprite_icon@2x.png",
+			"sprite_name": "sprite_icon@2x.png"
+		),
+		"tick": (
+			"name": "tick",
+			"width": 26,
+			"height": 20,
+			"total_width": 422,
+			"total_height": 252,
+			"x": -102,
+			"y": -160,
+			"x_pct": "25.758%",
+			"y_pct": "68.966%",
+			"url": "/img/sprite/sprite_icon@2x.png",
+			"sprite_name": "sprite_icon@2x.png"
+		),
+		"waiting": (
+			"name": "waiting",
+			"width": 126,
+			"height": 126,
+			"total_width": 422,
+			"total_height": 252,
+			"x": -296,
+			"y": 0,
+			"x_pct": "100%",
+			"y_pct": 0,
+			"url": "/img/sprite/sprite_icon@2x.png",
+			"sprite_name": "sprite_icon@2x.png"
+		)
+	)
+);
+@function sprite-prop($name, $property, $retina: null) {
+	$type: type-of($name);
+	@if ('map'==$type) {
+		@return map-get($name, $property);
+	}
+	$retina: if(null==$retina, global_variable_exists('__sprite-group-2x__'), $retina);
+	$set: if($retina, $__sprite-group-2x__, $__sprite-group__);
+	$slash: str-index($name, '/');
+	$group: null;
+	@if ($slash) {
+		$group: str-slice($name, 0, $slash - 1);
+		$name: str-slice($name, $slash + 1);
+	}
+	@else {
+		$group: str-index($name, '-');
+		$group: if($group, str-slice($name, 0, $group - 1), 'default');
+		$group: if(map-has-key($set, $group), $group, 'default');
+	}
+	$group: map-get($set, $group);
+	$name: map-get($group, $name);
+	@return map-get($name, $property);
+}
+
+@function sprite-info($group, $prop: null, $retina: null) {
+	@if ('string' !=type-of($prop)) {
+		$retina: $prop;
+		$prop: $group;
+		$group: nth(map-keys($__sprite-group__), 1);
+	}
+	$retina: if(null==$retina, global_variable_exists('__sprite-group-2x__'), $retina);
+	$set: if($retina, $__sprite-group-2x__, $__sprite-group__);
+	$set: map-get($set, $group);
+	$set: map-get($set, nth(map-keys($set), 1));
+	$prop: if('width'==$prop, 'total_width', $prop);
+	$prop: if('height'==$prop, 'total_height', $prop);
+	@return map-get($set, $prop);
+}
+
+@function sprite-group($group: 'default', $retina: null) {
+	@if ('bool'==type-of($group)) {
+		$retina: $group;
+		$group: 'default';
+	}
+	$retina: if(null==$retina, global_variable_exists('__sprite-group-2x__'), $retina);
+	$set: if($retina, $__sprite-group-2x__, $__sprite-group__);
+	@return map-get($set, $group);
+}
+
+@mixin sprite-position($name) {
+	$x: null;
+	$y: null;
+	@if ($__sprite-is-rem__) {
+		$x: unquote(sprite-prop($name, 'x_pct'));
+		$y: unquote(sprite-prop($name, 'y_pct'));
+	}
+	@else if ($__sprite-only-retina__) {
+		$x: sprite-prop($name, 'x', false) + px;
+		$y: sprite-prop($name, 'y', false) + px;
+	}
+	@else {
+		$x: sprite-prop($name, 'x') + px;
+		$y: sprite-prop($name, 'y') + px;
+	}
+	background-position: $x $y;
+}
+
+@mixin sprite-item($name) {
+	$slash: str-index($name, '/');
+	$dir: null;
+	@if ($slash) {
+		$dir: str-slice($name, 0, $slash - 1);
+	}
+	@else {
+		$dir: str-index($name, '-');
+		$dir: if($dir, str-slice($dir, 0, $dir - 1), 'default');
+		$dir: if(map-has-key($__sprite-group__, $dir), $dir, 'default');
+	}
+	@extend %__sprite-group-#{$dir}__;
+	@include sprite-position($name);
+	@if ($__sprite-only-retina__) {
+		width: sprite-prop($name, 'width', false) + px;
+		height: sprite-prop($name, 'height', false) + px;
+	}
+	@else {
+		width: sprite-prop($name, 'width') + px;
+		height: sprite-prop($name, 'height') + px;
+	}
+}
+
+$__sprite-is-loaded__: global_variable_exists('__sprite-group__') and map-has-key($__sprite-group__, nth(map-keys($__sprite-local-group__), 1));
+$__sprite-group__: map-merge(if(global_variable_exists('__sprite-group__'), $__sprite-group__, ()), $__sprite-local-group__);
+@if (global_variable_exists('__sprite-local-group-2x__')) {
+	$__sprite-group-2x__: map-merge(if(global_variable_exists('__sprite-group-2x__'), $__sprite-group-2x__, ()), $__sprite-local-group-2x__) !global;
+}
+
+@if (false==$__sprite-is-loaded__) {
+	@each $dir,
+	$group in $__sprite-local-group__ {
+		%__sprite-group-#{$dir}__ {
+			$fileName: sprite-info($dir, 'sprite_name', false);
+			background-image: resolve($fileName);
+			@if (global_variable_exists('__sprite-group-2x__')) {
+				$fileName2x: sprite-info($dir, 'sprite_name', true);
+				$total_width: sprite-info($dir, 'width', true) + px;
+				$total_height: sprite-info($dir, 'height', true) + px;
+				@if ($__sprite-only-retina__) {
+					$total_width: sprite-info($dir, 'width', false) + px;
+					$total_height: sprite-info($dir, 'height', false) + px;
+				}
+				background-image: -webkit-image-set(resolve($fileName) 1x, resolve($fileName2x) 2x);
+				background-size: $total_width $total_height;
+			}
+		}
+	}
+}
