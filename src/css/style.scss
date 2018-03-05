@@ -11,28 +11,33 @@ body{
   }
 }
 .header{
-  color: #fff;
+  color: #202c37;
   position: relative;
   z-index: 4;
-  background-color: #3a8ae2;
+  background-color: #f9f9f9;
 }
+
 .logo-wrap{
   text-align: center;
   font-size: 36px;
   position: relative;
-  height: 88px;
-  line-height: 88px;
+  height: 78px;
+  line-height: 78px;
+  border-bottom: 1px solid #d6d6d6;
 }
 .search-back {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 80px;
+  //width: 80px;
+  padding-left: 40px;
+  font-size: 30px;
   &:before{
     content: '';
     @include sprite-item('icon/back01');
-    @include position-center();
+    @include position-center('y');
+    left: 12px;
   }
 }
 .tab{
@@ -294,6 +299,9 @@ body{
     &.disabled{
       background-color: #b5b5b5;
       pointer-events: none;
+    }
+    &:active{
+      background-color: rgba(#ffa200, .6);
     }
   }
 }
