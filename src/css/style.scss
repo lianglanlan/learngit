@@ -4,6 +4,7 @@
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+  word-break: normal;
 }
 body{
   -webkit-touch-callout: none;
@@ -489,6 +490,7 @@ body{
 }
 %checkbox{
   label{
+    position: relative;
     display: block;
   }
   input{
@@ -503,8 +505,8 @@ body{
     display: inline-block;
     vertical-align: middle;
     margin: -2px 16px 0 0;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     background-color: #fff;
     border: 1px solid #d9d9d9;
     border-radius: 100%;
@@ -523,10 +525,19 @@ body{
 .test-answer-list{
   padding-bottom: 270px;
   margin: 36px 50px 0;
-  line-height: 70px;
+  line-height: 50px;
   color: #202d38;
   font-size: 28px;
   @extend %checkbox;
+  label{
+    padding: 10px 0;
+    padding-left: 58px;
+  }
+  i{
+    position: absolute;
+    left: 0;
+    top: 18px;
+  }
 }
 //亏损提示弹窗
 %popbtn{
