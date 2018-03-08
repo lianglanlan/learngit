@@ -480,13 +480,18 @@ body{
   }
 }
 .test-question{
+  position: relative;
   margin: 0 50px;
-  padding: 60px 0 46px;
+  padding: 60px 0 46px 30px;
   font-size: 36px;
   font-weight: bold;
   line-height: 56px;
   color: #1c8ae9;
   border-bottom: 1px solid #efefef;
+  span{
+    position: absolute;
+    left: -20px;
+  }
 }
 %checkbox{
   label{
