@@ -6,24 +6,36 @@ html{
   font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
 }
 body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   &.bg-f7{
     background-color: #f7f7f7;
   }
 }
 .header{
-  color: #202c37;
   position: relative;
-  z-index: 4;
+  height: 80px;
+  color: #202c37;
   background-color: #f9f9f9;
+  z-index: 4;
 }
 
 .logo-wrap{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   text-align: center;
   font-size: 36px;
-  position: relative;
   height: 78px;
   line-height: 78px;
   border-bottom: 1px solid #d6d6d6;
+  background-color: #f9f9f9;
 }
 .search-back {
   position: absolute;
