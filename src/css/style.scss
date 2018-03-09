@@ -4,7 +4,6 @@
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
-  word-break: normal;
 }
 body{
   -webkit-touch-callout: none;
@@ -13,6 +12,8 @@ body{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  word-break: normal;
+
 
   &.bg-f7{
     background-color: #f7f7f7;
@@ -719,4 +720,63 @@ body{
     background-color: #b6b6b6;
   }
 }
-
+//金币中心规则
+.list2{
+  padding: 50px 70px 0 110px;
+  > li{
+    position: relative;
+    margin-bottom: 16px;
+    padding: 36px 40px;
+    line-height: 40px;
+    background-color: rgba(28, 138, 233, .05);
+    border-radius: 20px;
+    font-size: 26px;
+    color: #1c8ae9;
+    text-align: justify;
+  }
+  span{
+    position: absolute;
+    left: -64px;
+    top: 16px;
+    background-color: #1C8AE9;
+    width: 64px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 64px 0 0 64px;
+    color: #fff;
+    font-size: 28px;
+  }
+  strong{
+    line-height: 48px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 20px;
+  }
+}
+.list2-list1{
+  li{
+    position: relative;
+    padding-left: 20px;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #1c8ae9;
+    }
+  }
+}
+.note5{
+  padding: 24px 0 100px 110px;
+  color: #49a1ed;
+  font-size: 24px;
+}
