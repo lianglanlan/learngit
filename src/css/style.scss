@@ -887,3 +887,48 @@ body{
   text-align: center;
   line-height: 100px;
 }
+//旺金明细
+.title3{
+  position: relative;
+  padding: 54px 0 0 58px;
+  line-height: 40px;
+  color: #646565;
+  font-size: 28px;
+  z-index: 1;
+  strong{
+    display: block;
+    line-height: 62px;
+    color: #de3f45;
+    font-size: 60px;
+  }
+}
+.list4-wrap{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 270px 34px 0;
+  box-sizing: border-box;
+}
+.list4{
+  background-color: #fff;
+  padding: 0 32px;
+  overflow-y: auto;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  li{
+    line-height: 88px;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 28px;
+  }
+  span{
+    &:first-child{
+      color: #161616;
+    }
+    &:last-child{
+      float: right;
+      color: #de3f45;
+    }
+  }
+}
