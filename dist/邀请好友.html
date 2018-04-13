@@ -49,15 +49,54 @@
 		</div>
 		<div class="invite-wrap2-box2">
 			<h3 class="invite-title">他们每天都在赚旺旺金，你也来吧！</h3>
-			<ul class="list3">
-				<li><span>137****5567</span><span>昨日收到41.2元</span><span>累计收到772元</span></li>
-				<li><span>159****3744</span><span>昨日收到198.9元</span><span>累计收到5186元</span></li>
-				<li><span>137****5567</span><span>昨日收到69元</span><span>累计收到1989元</span></li>
-				<li><span>159****3744</span><span>昨日收到84.7元</span><span>累计收到2143元</span></li>
-				<li><span>137****5567</span><span>昨日收到18.9元</span><span>累计收到874元</span></li>
-			</ul>
+			<div class="list3-box">
+				<ul class="list3">
+					<li><span>137****5567</span><span>昨日收到41.2元</span><span>累计收到772元</span></li>
+					<li><span>159****3744</span><span>昨日收到198.9元</span><span>累计收到5186元</span></li>
+					<li><span>137****5567</span><span>昨日收到69元</span><span>累计收到1989元</span></li>
+					<li><span>159****3744</span><span>昨日收到84.7元</span><span>累计收到2143元</span></li>
+					<li><span>137****5567</span><span>昨日收到18.9元</span><span>累计收到874元</span></li>
+				</ul>
+			</div>
 		</div>
 	</div>
+	<script src="./js/jquery-2.2.3.js"></script>
+	<script>
+		function _invite() {
+			window.location = "microoption://referral_invite_buy";
+		}
+		(function($) {
+			$.fn.scrollTop = function(options) {
+				var defaults = {
+					speed: 30
+				}
+				var opts = $.extend(defaults, options);
+				this.each(function() {
+					var $timer;
+					var scroll_top = 0;
+					var obj = $(this);
+					var $height = obj.find("ul").height();
+					obj.find("ul").clone().appendTo(obj);
+					obj.hover(function() {
+						clearInterval($timer);
+					}, function() {
+						$timer = setInterval(function() {
+							scroll_top++;
+							if (scroll_top > $height) {
+								scroll_top = 0;
+							}
+							obj.find("ul").first().css("margin-top", -scroll_top);
+						}, opts.speed);
+					}).trigger("mouseleave");
+				})
+			}
+		})(jQuery)
+		$(function() {
+			$(".list3-box").scrollTop({
+				speed: 20 //数值越大 速度越慢
+			});
+		})
+	</script>
 </body>
 
 </html>

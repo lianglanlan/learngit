@@ -1,0 +1,1 @@
+var config_url = 'https://beta.xiaoxiaoqiquan.com';
