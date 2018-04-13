@@ -60,43 +60,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="./js/jquery-2.2.3.js"></script>
-	<script>
-		function _invite() {
-			window.location = "microoption://referral_invite_buy";
-		}
-		(function($) {
-			$.fn.scrollTop = function(options) {
-				var defaults = {
-					speed: 30
-				}
-				var opts = $.extend(defaults, options);
-				this.each(function() {
-					var $timer;
-					var scroll_top = 0;
-					var obj = $(this);
-					var $height = obj.find("ul").height();
-					obj.find("ul").clone().appendTo(obj);
-					obj.hover(function() {
-						clearInterval($timer);
-					}, function() {
-						$timer = setInterval(function() {
-							scroll_top++;
-							if (scroll_top > $height) {
-								scroll_top = 0;
-							}
-							obj.find("ul").first().css("margin-top", -scroll_top);
-						}, opts.speed);
-					}).trigger("mouseleave");
-				})
-			}
-		})(jQuery)
-		$(function() {
-			$(".list3-box").scrollTop({
-				speed: 20 //数值越大 速度越慢
-			});
-		})
-	</script>
 </body>
 
 </html>
