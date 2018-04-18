@@ -14,6 +14,10 @@ body{
   &.bg-f7{
     background-color: #f7f7f7;
   }
+
+  &.bg-blue{
+    background-color: #0f7fe0;
+  }
 }
 .header{
   position: relative;
@@ -1000,5 +1004,187 @@ body{
       float: right;
       color: #de3f45;
     }
+  }
+}
+//朋友圈分享注册
+.circle-wrap{
+  padding-top: 1px;
+  margin: 156px 30px 0;
+  background-color: #0F7FE0;
+  box-shadow: 0 24px 60px 8px #073fd0;
+}
+
+.img-logo{
+  display: block;
+  margin: -106px auto 24px;
+  width: 358px;
+  height: 260px;
+}
+.circle-txt1{
+  line-height: 90px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0 14px 38px rgba(0, 0, 0, 0.37);
+  font-weight: bold;
+}
+
+.circle-txt2{
+  margin: 8px 0 48px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+.circle-txt3{
+  position: relative;
+  line-height: 102px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  background-color: #fba730;
+  &:before,&:after{
+    content: '';
+    position: absolute;
+    top: 0;
+
+  }
+  &:before{
+    left: -20px;
+    @include sprite-item(icon/icon01);
+  }
+  &:after{
+    right: -20px;
+    @include sprite-item(icon/icon02);
+  }
+  strong{
+    font-size: 40px;
+    font-style: italic;
+    margin: 0 6px;
+  }
+}
+.form-wrap{
+  background-color: #edf4fa;
+  padding: 0 38px;
+}
+.input-wrap{
+  position: relative;
+  margin-bottom: 14px;
+  background-color: #fdfeff;
+  border: 1px solid #8ac3f4;
+  background-color: #fdfeff;
+  border-radius: 82px;
+  padding-left: 30px;
+  input{
+    line-height: 78px;
+    display: block;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    color: #b2b1b1;
+  }
+}
+.circle-txt4{
+  padding: 40px 0 10px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 26px;
+  color: #b2b1b1;
+}
+.input-btn{
+  position: absolute;
+  top: 0;
+  right: 30px;
+  line-height: 82px;
+  color: #fba730;
+  font-size: 28px;
+}
+.circle-btn1{
+  margin-top: 22px;
+  display: block;
+  line-height: 84px;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  background-color: #fba730;
+  border-radius: 84px;
+}
+.agreement{
+  padding: 26px 0 38px;
+  display: block;
+  line-height: 40px;
+  font-size: 20px;
+  color: #999;
+  input{
+    display: none;
+    &:checked + i{
+      @include sprite-item('icon/icon03');
+    }
+  }
+  i{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 6px 0 0;
+    @include sprite-item('icon/icon04');
+  }
+  a{
+    color: #339af3;
+    text-decoration: underline;
+  }
+}
+.circle-footer{
+  display: flex;
+  height: 170px;
+  align-items: center;
+  img{
+    flex: none;
+    width: 124px;
+    height: 32px;
+    margin: 0 percentage(50/750) 0 30px;
+  }
+}
+.circle-footer-txt{
+  line-height: 30px;
+  font-size: 24px;
+  color: #fff;
+}
+.circle-success{
+  padding: 64px 36px 58px;
+  background: url('../img/bg-success.png') no-repeat center;
+  background-size: 100% 100%;
+}
+.circle-success-icon{
+  position: relative;
+  padding-right: 20px;
+  height: 104px;
+  font-size: 24px;
+  color: #ed462f;
+  text-align: center;
+  z-index: 0;
+  strong{
+    font-size: 50px;
+  }
+  &:before{
+    content: '';
+    @include position-center('x');
+    @include sprite-item(icon/icon05);
+    z-index: -1;
+  }
+}
+.circle-success-txt1{
+  margin-top: 20px;
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  color: #ed462f;
+}
+.circle-success-txt2{
+  text-align: center;
+  line-height: 38px;
+  color: #666;
+  font-size: 24px;
+  strong{
+    color: #ed462f;
+    font-weight: normal;
   }
 }
