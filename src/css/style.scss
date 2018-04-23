@@ -1162,6 +1162,10 @@ body{
   text-align: center;
   z-index: 0;
   strong{
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 8px;
     font-size: 50px;
   }
   &:before{
