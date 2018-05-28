@@ -1341,6 +1341,10 @@ body {
   border: 1px solid;
   background-color: #d2e8fb;
   border-radius: 10px;
+  &.disabled{
+    background-color: #f5f5f5;
+    color: #999;
+  }
 }
 .note-rank{
   margin-left: 94px;
